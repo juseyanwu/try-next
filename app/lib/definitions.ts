@@ -86,3 +86,35 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+
+// 活动类型定义
+export type Event = {
+  id: string;
+  title: string;
+  date: string;
+  location: string;
+  description: string;
+  organizer_id: string; // 组织者ID，关联到用户
+  created_at: string;
+};
+
+// 活动表格类型
+export type EventsTable = {
+  id: string;
+  title: string;
+  date: string;
+  location: string;
+  description: string;
+  organizer_name: string; // 组织者名称
+  created_at: string;
+};
+
+// 活动表单类型
+export type EventForm = {
+  id?: string;
+  title: string;
+  date: string;
+  location: string;
+  description: string;
+  organizer_id: string;
+};
