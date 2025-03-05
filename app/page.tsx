@@ -4,6 +4,7 @@ import Link from "next/link";
 import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
 
+export const dynamic = 'force-dynamic'
 // 校园社团管理系统主页
 export default function Page() {
   return (
@@ -12,7 +13,7 @@ export default function Page() {
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-600 p-4 md:h-52">
         <div className={`${lusitana.className} flex flex-row items-center leading-none text-white`}>
           <UserGroupIcon className="h-12 w-12 rotate-[15deg]" />
-          <p className="text-[44px]">校园社团管理系统</p>
+          <p className="text-[24px]">校园社团管理系统</p>
         </div>
       </div>
 
