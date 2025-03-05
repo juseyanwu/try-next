@@ -4,7 +4,6 @@ import Link from "next/link";
 import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
 
-export const dynamic = 'force-dynamic'
 // 校园社团管理系统主页
 export default function Page() {
   return (
